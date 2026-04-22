@@ -21,7 +21,6 @@
 Requires Python 3.8+
 
 ```bash
-cd backend
 pip install -r requirements.txt
 python api.py
 ```
@@ -31,7 +30,6 @@ python api.py
 Requires Node.js 18+
 
 ```bash
-cd annihilator-web
 npm install
 npm run dev
 ```
