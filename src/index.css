@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #000000;
+  /* True Black */
+  --color-pane: #080808;
+  /* Deep Obsidian */
+  --color-border: #1a1a1a;
+  /* Sharp Industrial Border */
+  --color-accent: #ffffff;
+  /* Emerald Accent */
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: #a1a1aa;
+  /* Zinc-400 for neutral text */
+  font-family: 'Inter', ui-sans-serif, system-ui;
+  font-size: 15px;
+  /* Clean, readable scale */
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Tab Active State - Clean & High Contrast */
+.tab-active {
+  background: var(--color-canvas);
+  border-bottom: 2px solid var(--color-accent);
+  color: #ffffff;
+}
+
+/* Scrollbar - Stealth Mode */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
